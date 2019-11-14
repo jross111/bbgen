@@ -27,7 +27,6 @@ function SquareForm({ addSquare }) {
 
 
 function App() {
-  // const [value, setValue] = useState("");
 
   const [squares, setSquares] = useState([
     { text: "hi" },
