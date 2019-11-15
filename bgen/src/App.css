@@ -2,24 +2,37 @@
 
 .App {
   text-align: center;
+  display: flex;
   justify-content: center;
+}
+
+#h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
 }
 
 .wrapper {
   background-color: grey;
-  justify-content: center;
-  display: inline-grid;
-  grid-template-columns: 100px 100px 100px 100px 100px;
-  grid-auto-rows: 100px 100px 100px 100px 100px;
-  border: 5px solid black;
-  margin-right: -1px;
-  margin-top: -1px;
+  /* max-width: 80%; */
+  /* justify-content: center; */
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px 100px; */
+  grid-template-columns: repeat(5, auto);
+  grid-auto-rows: 130px;
+  border: 40px black;
+  /* margin-right: -1px; */
+  /* margin-top: -1px; */
 }
 
 .item {
-  border: 2px solid black;
-  padding: 1px;
-  background-color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 5px black dashed;
+  background-color: lightcyan;
   word-wrap: break-word;
    
   /* position: absolute; */
@@ -29,11 +42,27 @@
 
 }
 
+.item-clicked {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 5px black dashed;
+  background-color: lightsalmon;
+  word-wrap: break-word;
+
+}
+
 .game-name {
+  font-family: monospace;
+  font-size: 6vh;
+  font-weight: bolder;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
   border: 5px solid black;
-  background-color: white;
+  background-color: lightskyblue;
 }
