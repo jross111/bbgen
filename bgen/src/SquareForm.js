@@ -15,6 +15,7 @@ export function SquareForm({ addSquare }) {
         setValue("");
     };
 
+    
     return (<Form className="form" onSubmit={handleSubmit}>
         <Input 
             size="large"
