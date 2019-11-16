@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Layout } from 'antd';
 import { SquareForm } from './SquareForm';
+import SideDrawer from './SideDrawer'
+
 
 export function Game() {
 
@@ -29,6 +31,7 @@ export function Game() {
     return (
         <Layout>
             <Header>Bingo</Header>
+            < SideDrawer />
             < SquareForm addSquare={addSquare} />
 
             <div className="wrapper">
