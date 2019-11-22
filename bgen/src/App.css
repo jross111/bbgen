@@ -43,15 +43,15 @@
 }
 
 .item-clicked {
-  justify-content: center;
+  /* justify-content: center;
   display: flex;
   align-items: center;
   padding: 10px;
   font-weight: bolder;
   border-radius: 10px;
-  border: 5px black dashed;
+  border: 5px black dashed; */
   background-color: lightsalmon;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
 
 }
 

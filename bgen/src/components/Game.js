@@ -15,10 +15,20 @@ export function Game() {
         { text: "yes" }
     ]);
 
+    const [state, setState] = useState(true);
+
+    function Toggle(){
+        console.log("clicked!");
+        state ? setState(false) : setState(true);
+        console.log({state})
+    }
+
     const addSquare = text => {
         const newSquares = [...squares, { text }];
         setSquares(newSquares);
     }
+
+
 
 
     function Square({square}){
@@ -33,19 +43,21 @@ export function Game() {
             <Header>Bingo</Header>
             < SideDrawer />
             < SquareForm addSquare={addSquare} />
-
             <div className="wrapper">
                 <div className="game-name"><h1>Bingo</h1></div>
                 {squares.map((square, index) => (
-                    <div className="item">
+                    <div className="item" >
                         <Square
                             key={index}
                             index={index}
                             square={square}
+                            onClick={Toggle} 
+                            className={ state ? "item" : "item-clicked"}
                         />
                     </div>
 
                 ))
+                
                 }
             </div>
         </Layout>
